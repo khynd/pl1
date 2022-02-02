@@ -1,6 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.initMap = void 0;
+// Story.js
+// Created by Kacy Hyndman for GEOM99, Fleming College
+// Adapted from: https://github.com/googlemaps/js-samples/blob/main/samples/custom-markers/src/index.ts
+// Last Updated: Feb 2, 2022
+
 var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -20,7 +22,7 @@ function initMap() {
             icon: "http://maps.google.com/mapfiles/ms/micons/pink-pushpin.png",
         },
         school: {
-            icon: "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png",
+            icon: "http://maps.google.com/mapfiles/kml/pal2/icon10.png",
         },
     };
     var features = [
@@ -82,4 +84,4 @@ function initMap() {
         });
     }
 }
-exports.initMap = initMap;
+
