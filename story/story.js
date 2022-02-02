@@ -1,4 +1,4 @@
-
+let map: google.maps.Map;
 
 function initMap(): void{
   map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
@@ -84,4 +84,5 @@ function initMap(): void{
     });
   }
 }
-
+// [END maps_custom_markers]
+export { initMap };
