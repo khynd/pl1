@@ -1,20 +1,25 @@
+<!-- StoryMap.html
+        Created by: Kacy Hyndman for GEOM99
+        Adapted from: https://github.com/FlemingGeom/googlemaps-shawnmflemingc/blob/main/clustering/ontarioparks.html
+        Last Updated: Feb 2, 2022
+        The story: This map shows places relevant to my relationship with my partner. (Doubles as a valentine's day gift lol)
+-->
+
 <!DOCTYPE html>
 <html>
-    <!--Adapted from https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-html-->
   <head>
     <title>Our 2021</title>
-   <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap"
       defer>
     </script>
     <script src="story.js"></script>
+      <!-- The following 3 links are to add in a google font from https://fonts.google.com/specimen/Shadows+Into+Light -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <style>
-        /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+        /* Section style for the map legend */
         aside {
             float: left;
             height: 100%;
@@ -22,18 +27,18 @@
             color: white;
             padding: 30px;
         }
-        h1 {font-family: 'Shadows Into Light', cursive; text-align: center; font-size: 210%;}
+        h1 {text-align: center; font-size: 210%;}
         h2 {text-align: center; font-size: 100%;}
-        p {font-family: 'Shadows Into Light', cursive; font-size: 100%}
+        p {font-size: 100%}
         
         #map {
         height: 100%;
         }
 
-        /* Optional: Makes the sample page fill the window. */
+        /* Makes the sample page fill the window. */
         html,
         body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Shadows Into Light', cursive;
         height: 100%;
         margin: 0;
         padding: 0;
