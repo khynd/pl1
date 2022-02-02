@@ -1,6 +1,6 @@
-let map;
+let map: google.maps.Map;
 
-function initMap(){
+function initMap(): void{
   map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
     center: new google.maps.LatLng(45.055155, -77.854767),
     // Made a mapID with google cloud platform-- remade Atlas style with lightened labels
@@ -84,6 +84,4 @@ function initMap(){
     });
   }
 }
-// [END maps_custom_markers]
-export { initMap };
 
