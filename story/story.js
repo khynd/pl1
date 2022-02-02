@@ -7,10 +7,12 @@ var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: new google.maps.LatLng(45.055155, -77.854767),
-        // Made a mapID with google cloud platform-- remade Atlas style with lightened labels
+        // Made a mapID with google cloud platform-- adapted preexisting Atlas style with lightened labels
         mapId: "2d5f156f4e4ca58f",
         zoom: 8,
     });
+    
+    // Found links for icons using https://sites.google.com/site/gmapsdevelopment/
     var icons = {
         date: {
             icon: "https://maps.google.com/mapfiles/ms/micons/ltblue-dot.png",
@@ -25,6 +27,8 @@ function initMap() {
             icon: "http://maps.google.com/mapfiles/kml/pal2/icon10.png",
         },
     };
+    
+    // Defining marker locations and selecting which marker to use
     var features = [
         {
             position: new google.maps.LatLng(43.907, -77.2392),
@@ -75,7 +79,8 @@ function initMap() {
             type: "date",
         },
     ];
-    // Create markers.
+    
+    // Creating markers
     for (var i = 0; i < features.length; i++) {
         var marker = new google.maps.Marker({
             position: features[i].position,
